@@ -1,0 +1,58 @@
+body {
+    overflow-x: hidden;
+}
+
+.intro {
+    height: 60vh;
+}
+
+.head {
+    height: 95vh;
+}
+
+.navbar {
+    height: 10vh;
+}
+
+.intro-content {
+    transform: translateY(-50px);
+}
+
+.box {
+    background-color: white;
+    height: auto;
+    transform: translateY(-150px); 
+    border-radius: 15px;
+}
+
+.work {
+    height: 150%;
+    width: 150%;
+}
+
+.hello {
+    transform: translateY(-200px);
+}
+
+.card {
+    height: 100%;
+}
+
+.cv {
+    height: 80%;
+    width: 80%;
+}
+
+.contact {
+    height: 100%;
+}
+
+.social {
+    margin-top: 40px;
+    border-radius:70px;
+}
+
+.touch {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
