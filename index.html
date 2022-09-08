@@ -14,13 +14,14 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js"></script>
   <title>Kishu Jain</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="trans">
     <div class="container">
-      <a class="navbar-brand" href="#">Kishu</a>
+      <a class="navbar-brand" href="#"><b>kishu</b></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,16 +29,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link fs-4" aria-current="page" href="#">Projects</a>
+            <a class="nav-link fs-4" aria-current="page" onClick="pScroll('project')">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-4" href="#">About Me</a>
+            <a class="nav-link fs-4" onClick="pScroll('about')">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-4" href="#">Curriculum Vitae</a>
+            <a class="nav-link fs-4" onClick="pScroll('cv')">Curriculum Vitae</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-4" href="#">Contact</a>
+            <a class="nav-link fs-4" onClick="pScroll('contact')">Contact</a>
           </li>
         </ul>
       </div>
@@ -57,7 +58,7 @@
     </div>
   </section>
   <section class="p-5 text-light bg-dark text-center intro d-flex align-items-center justify-content-center">
-    <div class="container intro-content">
+    <div class="container intro-content" id="about">
       <h2 class="fs-1 fw-bold">Hi! I'm Kishu. Nice to meet you.</h1>
         <br />
         <p class="fs-6 px-5 mx-5">I'm from West Bengal, India. I am pursing my bacheloer's degree in Computer Science
@@ -94,7 +95,7 @@
   </section>
   <section class="container-fluid text-center p-5 border-bottom">
     <div class="container">
-      <h1>My Recent Projects</h1>
+      <h1 id="project">My Recent Projects</h1>
       <p>These are the projects I recently worked on:</p>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
@@ -142,18 +143,18 @@
       </div>
     </div>
   </section>
-  <section class="container py-5">
+  <section class="container py-5" id="cv">
     <div class="row text-center pt-5">
       <div class="col-sm-6">
         <h1>Curriculum Vitae</h1>
         <p>You can download my CV from below to know more about me.</p>
-        <button type="button" class="btn btn-outline-dark">Download CV</button>
+        <button type="button" class="btn btn-outline-dark"><a href="./assets/CV Kishu Jain.docx.pdf">Download CV</a></button>
       </div>
       <div class="col-sm-6">
         <img src="./assets/undraw_online_cv_qy9w.svg" class="cv" />
       </div>
   </section>
-  <section class="container-fluid text-light bg-dark contact d-flex align-items-center">
+  <section class="container-fluid text-light bg-dark contact d-flex align-items-center" id="contact">
     <div class="container text-center endc">
       <div class="touch">
         <h3 class="display-4 fw-bold">Get in touch!</h3>
