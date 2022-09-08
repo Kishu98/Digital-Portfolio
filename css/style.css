@@ -44,6 +44,11 @@ body {
     width: 80%;
 }
 
+#download {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 .contact {
     height: 100%;
 }
